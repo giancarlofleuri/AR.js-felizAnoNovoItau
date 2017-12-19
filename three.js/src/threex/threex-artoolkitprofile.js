@@ -155,15 +155,7 @@ ARjs.Profile.prototype.changeMatrixMode = function (changeMatrixMode) {
 	return this
 }
 
-//////////////////////////////////////////////////////////////////////////////
-//		trackingBackend
-//////////////////////////////////////////////////////////////////////////////
-ARjs.Profile.prototype.trackingMethod = function (trackingMethod) {
-	var data = ARjs.Utils.parseTrackingMethod(trackingMethod)
-	this.defaultMarkerParameters.markersAreaEnabled = data.markersAreaEnabled
-	this.contextParameters.trackingBackend = data.trackingBackend	
-	return this
-}
+
 
 /**
  * check if the profile is valid. Throw an exception is not valid
