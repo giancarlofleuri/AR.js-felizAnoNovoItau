@@ -169,7 +169,9 @@ ARjs.AnchorDebugUI = function(arAnchor){
 		var domElement = document.createElement('button')
 		domElement.style.display = 'block'
 		this.domElement.appendChild(domElement)
-
+domElement.id = 'buttonMarkersAreaReset'
+ 	domElement.innerHTML = 'Reset-marker-area'
+ 	domElement.href ='javascript:void(0)'
 		
 		domElement.addEventListener('click', function(){
 			ARjs.MarkersAreaUtils.storeDefaultMultiMarkerFile(trackingBackend)
