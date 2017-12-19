@@ -27,27 +27,7 @@ ARjs.SessionDebugUI = function(arSession, tangoPointCloud){
 	// this.domElement.appendChild(domElement)
 	// domElement.innerHTML = 'AR.js Session Debug'
 
-	//////////////////////////////////////////////////////////////////////////////
-	//		current-tracking-backend
-	//////////////////////////////////////////////////////////////////////////////
-
-	var domElement = document.createElement('span')
-	domElement.style.display = 'block'
-	this.domElement.appendChild(domElement)
-	domElement.innerHTML = '<b>trackingBackend</b> : ' +trackingBackend
 	
-	//////////////////////////////////////////////////////////////////////////////
-	//		augmented-websites
-	//////////////////////////////////////////////////////////////////////////////
-
-	if( ARjs.SessionDebugUI.AugmentedWebsiteURL ){
-		var domElement = document.createElement('a')
-		domElement.innerHTML = 'Share on augmented-websites'
-		domElement.style.display = 'block'
-		// domElement.setAttribute('target', '_blank')
-		domElement.href = ARjs.SessionDebugUI.AugmentedWebsiteURL + '?'+location.href
-		this.domElement.appendChild(domElement)						
-	}
 
 	//////////////////////////////////////////////////////////////////////////////
 	//		toggle-point-cloud
