@@ -19,9 +19,7 @@ ARjs.Anchor = function(arSession, markerParameters){
 	this.arSession = arSession
 	this.parameters = markerParameters
 	
-	// log to debug
-	console.log('ARjs.Anchor -', 'changeMatrixMode:', this.parameters.changeMatrixMode, '/ markersAreaEnabled:', markerParameters.markersAreaEnabled)
-
+	
 	var markerRoot = new THREE.Group
 	scene.add(markerRoot)
 
