@@ -54,13 +54,6 @@ ARjs.Babylon.init = function(babylonEngine, babylonScene, babylonCamera){
 	//		DebugUI
 	//////////////////////////////////////////////////////////////////////////////
 
-	// create arjsDebugUIContainer if needed
-	if( document.querySelector('#arjsDebugUIContainer') === null ){
-		var domElement = document.createElement('div')
-		domElement.id = 'arjsDebugUIContainer'
-		domElement.setAttribute('style', 'position: fixed; bottom: 10px; width:100%; text-align: center; z-index: 1;color: grey;')
-		document.body.appendChild(domElement)
-	}
 
 
 	var sessionDebugUI = new ARjs.SessionDebugUI(arSession, tangoPointCloud)
